@@ -1,0 +1,14 @@
+{
+  "name": "projeto frameworks 2",
+  "version": "1.0.0",
+  "description": "códigos da disciplina de fw2",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Info B",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
