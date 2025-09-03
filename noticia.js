@@ -1,20 +1,18 @@
 var http = require('http');
 var server = http.createServer(function (req, res) {
     var url = req.url;
-    if (url == "/") {
-        res.end('Pagina Inicial');
-    } else if (url == "/cursos") {
-        res.end('Bem vindo Turma Info B! Pagina de cursos do IF');
-    } else if (url == "/esportes") {
-        res.end('Bem vindo Turma Info B! Pagina de esportes do IF');
-    } else if (url == "/pesquisa") {
-        res.end('Bem vindo Turma Info B! Pagina de pesquisa do IF');
-    } else if (url == "/extensao") {
-        res.end('Bem vindo Turma Info B! Pagina de extensao do IF');
-    } else if (url == "/cultura") {
-        res.end('Bem vindo Turma Info B! Pagina de cultura do IF');
-    } else {
-        res.end('Pagina Inexixtente');
+    console.log(req.method)
+    if (url == '/'){ 
+        res.end('Bem vindo a pagina inicial do IFMS - Dourados');
+    }else if (url == '/cursos'){ 
+        res.end('Bem vindo aos Cursos do IFMS - Dourados');
+    }else if (url == '/pesquisa'){
+        res.end('Bem vindo aos Pesquisa do IFMS - Dourados');
+    }else if (url == '/esportes'){
+        res.end('Bem vindo aos Esportes do IFMS - Dourados');
+    
+    }else if (url == '/cultura'){
+        res.end('Bem vindo aos Cultura do IFMS - Dourados');
     }
 })
 server.listen(3000);

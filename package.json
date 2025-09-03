@@ -1,14 +1,16 @@
 {
-  "name": "projeto frameworks 2",
+  "name": "fw26b",
   "version": "1.0.0",
-  "description": "códigos da disciplina de fw2",
+  "description": "codigos da disciplna de frameworks 2 ",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Info B",
+  "author": "Turma 6B Info.",
   "license": "ISC",
   "dependencies": {
-    "express": "^5.1.0"
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10"
   }
 }
