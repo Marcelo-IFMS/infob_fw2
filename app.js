@@ -5,7 +5,7 @@ const port = process.env.port;
 console.log(port);
 const mongo = process.env.dbconn;
 console.log(mongo);
-const user = 'mongodb+srv://mtperez:PJgibJ7KQWfJBiL4@mtperez.tserylw.mongodb.net/?retryWrites=true&w=majority&appName=mtperez'
+
 
 app.set('view engine', 'ejs')
 // com esta linha de comando podemos altera a pasta dos arquivos para renderização
@@ -31,4 +31,5 @@ app.put('/', (req, res) => {
 app.delete('/', (req, res) => {
   res.send('Requisição Delete')
 })
+
 app.listen(port)
