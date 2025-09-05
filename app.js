@@ -1,15 +1,23 @@
 const express = require('express')
 const app = express()
+//para criar a variável de ambiente no Windows use set port=3000 
+const port = process.env.port;
+console.log(port);
+const mongo = process.env.dbconn;
+console.log(mongo);
+const user = 'mongodb+srv://mtperez:PJgibJ7KQWfJBiL4@mtperez.tserylw.mongodb.net/?retryWrites=true&w=majority&appName=mtperez'
 
 app.set('view engine', 'ejs')
 // com esta linha de comando podemos altera a pasta dos arquivos para renderização
 // app.set('views','src/pages')
+app.use(express.static('public'))
+
 
 app.get('/', (req, res) => {
   res.send('Hello World! - GET')
 })
 app.get('/cursos', (req, res) => {
-  res.send('<html><body><h1>Bem vindo a Home de Cursos</h1><h3>IFMS</h3></body></html>')
+  res.render('cursos')
 })
 app.get('/pesquisa', (req, res) => {
   res.render('./pesquisa')
@@ -23,4 +31,4 @@ app.put('/', (req, res) => {
 app.delete('/', (req, res) => {
   res.send('Requisição Delete')
 })
-app.listen(3000)
+app.listen(port)
