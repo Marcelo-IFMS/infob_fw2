@@ -3,9 +3,6 @@ const app = express()
 //para criar a variável de ambiente no Windows use set port=3000 
 const port = process.env.port;
 console.log(port);
-const mongo = process.env.dbconn;
-console.log(mongo);
-
 
 app.set('view engine', 'ejs')
 // com esta linha de comando podemos altera a pasta dos arquivos para renderização
@@ -31,5 +28,4 @@ app.put('/', (req, res) => {
 app.delete('/', (req, res) => {
   res.send('Requisição Delete')
 })
-
 app.listen(port)
