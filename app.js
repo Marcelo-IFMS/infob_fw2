@@ -13,9 +13,11 @@ app.use(express.static('public'))
 app.get('/', (req, res) => {
   res.render('index')
 })
-app.get('/cursos', (req, res) => {
-  res.render('cursos')
-})
+// var rotaCursos = require('./route/cursos')
+// rotaCursos(app);
+// app.get('/cursos', (req, res) => {
+//   res.render('cursos')
+// })
 app.get('/pesquisa', (req, res) => {
   res.render('./pesquisa')
 })
