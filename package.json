@@ -9,8 +9,10 @@
   "author": "Turma 6B Info.",
   "license": "ISC",
   "dependencies": {
+    "consign": "^0.1.6",
     "ejs": "^3.1.10",
     "express": "^5.1.0",
+    "mongodb": "^6.20.0",
     "nodemon": "^3.1.10"
   }
 }
