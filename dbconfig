@@ -1,0 +1,7 @@
+mongo db atlas
+user mtomporoski
+pass IhqD3HLUyn4rkChM
+
+npm install mongodb
+
+mongodb+srv://mtperez:PJgibJ7KQWfJBiL4@mtperez.tserylw.mongodb.net/?retryWrites=true&w=majority&appName=mtperez
