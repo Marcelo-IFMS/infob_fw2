@@ -6,7 +6,7 @@ module.exports = (app) => {
         await app.DBClient.connect();
         // Send a ping to confirm a successful connection
         await app.DBClient.db("admin").command({ ping: 1 });
-        console.log("Pinged your deployment. You successfully connected to MongoDB!");
+        console.log("Sucesso ao acessar o MongoDB");
         res.send('Conexão Mongodb')
       } finally {
         // Ensures that the client will close when you finish/error

@@ -4,6 +4,7 @@
   "description": "codigos da disciplna de frameworks 2 ",
   "main": "app.js",
   "scripts": {
+    "env":"nodemon --env-file=.env app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Turma 6B Info.",

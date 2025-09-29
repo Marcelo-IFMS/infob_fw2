@@ -20,3 +20,15 @@ npm i mongodb
 //set variavel de ambiente
 set "dbconn=<strig de conexão do MongoDB>"
 
+//configuração para habilitar todos os ip's no mongo db atlas
+https://cloud.mongodb.com/v2/68b1fd9d515ebf25b5663431#/security/network/accessList
+0.0.0.0/0
+
+// configuração de variáveis de ambiente
+https://nodejs.org/en/learn/command-line/how-to-read-environment-variables-from-nodejs
+
+//api rest do mongodb e nodejs
+https://www.mongodb.com/resources/languages/express-mongodb-rest-api-tutorial
+
+//expressões regulares
+https://www.mongodb.com/pt-br/docs/manual/reference/operator/query/regex/
