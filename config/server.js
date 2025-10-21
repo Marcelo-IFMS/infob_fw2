@@ -7,6 +7,8 @@ app.set('view engine', 'ejs')
 // com esta linha de comando podemos altera a pasta dos arquivos para renderização
 // app.set('views','src/pages')
 app.use(express.static('public'))
+app.use(express.json());
+app.use(express.urlencoded());
  
 consign()
   .include('./route')
