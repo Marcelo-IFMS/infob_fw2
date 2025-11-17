@@ -11,7 +11,7 @@ module.exports = (app) => {
                     titulonoticia: titulonoticia,
                     conteudonoticia: conteudonoticia,
                     tiponoticia: tiponoticia,
-                    datahoracadastro: new Date()
+                    datahoracadastro: new Date().toLocaleString('pt-BR', { timeZone: 'America/Cuiaba' })
                 })
             res.status(200).send("Notícia Cadastrada")
         } catch (error) {
