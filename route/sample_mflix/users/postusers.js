@@ -4,6 +4,7 @@ module.exports = (app) => {
             const name = req.body.name
             const email = req.body.email
             const password = req.body.password
+            await app.DBClient.connect();
             const resultado = await app.DBClient.db('sample_mflix')
                 .collection('users')
                 .insertOne({ name: name, email: email, password: password })
